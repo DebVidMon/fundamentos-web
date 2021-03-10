@@ -1,0 +1,77 @@
+/*index*/
+body{
+    border-style: hidden;
+}
+.center{
+    text-align: center;
+}
+p{
+    font-family: 'Times New Roman', Georgia, Times, serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+h1{
+    color: orangered;
+}
+h2{
+    color:orange;
+}
+.p-30{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.height40{
+    height: 40px;
+}
+.container{
+   display: flex; 
+   flex-flow: row;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+}
+.container p{
+    padding-left: 35px;
+}
+#menu{
+    background-color:black;
+}
+#menu li{
+    display: inline-table;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu li:hover{
+    color: orange;
+}
+
+#menu li a:visited{
+    color: orangered;
+}
+
+footer{
+    background-color:white;
+}
+
+/*Contato*/
+form{
+    background-color: rgb(252, 242, 223);
+    border-radius: 5%;
+    padding: 15px;
+}
+
+form button{
+    padding: 5px;
+    background-color: orangered;
+    color:white;
+    border-radius: 20%; 
+}
