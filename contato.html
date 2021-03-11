@@ -18,40 +18,48 @@
                 <h2 class="center">Fale comigo!</h1>
                 <label for="nome">Nome:</label>
                 <br>
-                <input type="text" id = "nome">
-                <br>
+                <input type="text" id = "nome" onkeyup="validaNome()">
+                <div id=txtNome></div>
                 <label for="email">Email:</label>
                 <br>
-                <input type="email" id = "email">
-                <br>
+                <input type="email" id = "email" onkeyup="validaEmail()">
+                <div id=txtEmail></div>
                 <label for="assunto">Assunto:</label>
                 <br>
-                <textarea name="assunto" id="assunto" cols="45" rows="10"></textarea>
+                <textarea name="assunto" id="assunto" cols="45" rows="10"onkeyup=" validaAssunto()"></textarea>
+                <div id=txtAssunto></div>
                 <br><br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
             </form>
         </div>
         <div class="p-30">
             <h2 class= "center">Endereço:</h2>
             <p>Parque Domingos Luís, 140</p>
             <p>São Paulo, SP</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.143923519549!2d-46.619001149039924!3d-23.49132498464268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef63c657ec6ff%3A0x8b8605bd02b68c0f!2sParque%20Domingos%20Lu%C3%ADs%2C%20140%20-%20Jardim%20S%C3%A3o%20Paulo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002043-080!5e0!3m2!1spt-BR!2sbr!4v1615301158647!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.
+            143923519549!2d-46.619001149039924!3d-23.49132498464268!2m3!1f0!2f0!3f0!3m2!1i1024!
+            2i768!4f13.1!3m3!1m2!1s0x94cef63c657ec6ff%3A0x8b8605bd02b68c0f!2sParque%20Domingos
+            %20Lu%C3%ADs%2C%20140%20-%20Jardim%20S%C3%A3o%20Paulo%2C%20S%C3%A3o%20Paulo%20-%20SP
+            %2C%2002043-080!5e0!3m2!1spt-BR!2sbr!4v1615301158647!5m2!1spt-BR!2sbr" 
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" 
+            id="mapa" onmousemove="mapZoom()" onmouseout="mapNormal()" ></iframe>
         </div>
     </div>
+    <footer class = "center">
+        <div class="container">
+            <a href="https://github.com/DebVidMon">
+            <img class= "height40 p-30" src="assets/img/github.png" alt="logo github">
+            </a>
+            <a href="http://www.behance.net/deboravmonteiro">
+            <img class= "height40 p-30" src="assets/img/behance.webp" alt="logo behance">
+            </a>
+            <a href="https://www.linkedin.com/in/d%C3%A9bora-videira-monteiro-90a5b347/">
+            <img class= "height40 p-30" src="assets/img/linkedin.png" alt="logo linkedin">
+            </a>
+            
+        </div>
+        Todos os direitos reservados: Débora Videira Monteiro &copy
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
-<footer class = "center">
-    <div class="container">
-        <a href="https://github.com/DebVidMon">
-        <img class= "height40 p-30" src="assets/img/github.png" alt="logo github">
-        </a>
-        <a href="http://www.behance.net/deboravmonteiro">
-        <img class= "height40 p-30" src="assets/img/behance.webp" alt="logo behance">
-        </a>
-        <a href="https://www.linkedin.com/in/d%C3%A9bora-videira-monteiro-90a5b347/">
-        <img class= "height40 p-30" src="assets/img/linkedin.png" alt="logo linkedin">
-        </a>
-        
-    </div>
-    Todos os direitos reservados: Débora Videira Monteiro &copy
-</footer>
 </html>
